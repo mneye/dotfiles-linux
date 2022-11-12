@@ -1,0 +1,3 @@
+-- Regex for limelight to include % demarcations
+-- vim.g.limelight_bop = '\\(^\\s*$\n\\|^\\s*%$\\n\\)\\zs'
+-- vim.g.limelight_eop = '\\ze\\(^$\\|^\\s*%$\\)'

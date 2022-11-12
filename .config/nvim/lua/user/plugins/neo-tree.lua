@@ -1,0 +1,14 @@
+-- local config
+--
+-- require('neo-treeo')
+-- filesystem = {
+--   visible = true,
+--   hide_dotfiles = false,
+--   hide_gitignored = true,
+--   hide_hidden = false, -- only works on Windows for hidden files/directories
+--   hide_by_name = {
+--     ".DS_Store",
+--     "thumbs.db",
+--   }
+-- }
+-- return config

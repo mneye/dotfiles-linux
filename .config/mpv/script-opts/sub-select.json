@@ -1,0 +1,24 @@
+[
+    {
+        "alang": "*",
+        "slang": "forced"
+    },
+    {
+        "alang": ["jpn", "ja"],
+        "slang": "eng?",
+        "blacklist": [ "sign", "cc", "dubtitle"],
+        "whitelist": ["dialogue","english"]
+    },
+    {
+        "alang": "eng?",
+        "slang": "no"
+    },
+    {
+        "alang": "*",
+        "slang": "eng?"
+    },
+    {
+        "alang": "*",
+        "slang": "und"
+    }
+]

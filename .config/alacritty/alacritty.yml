@@ -1,0 +1,136 @@
+window:
+  opacity: 1
+  class:
+    instance: Alacritty
+    general: Alacritty
+  dimensions:
+    columns: 100
+    lines: 30
+  padding:
+    x: 0
+    y: 0
+  margin:
+    x: 0
+    y: 0
+  dynamic_padding: false
+  decorations: None
+  dynamic_title: true
+
+#shell:
+#  program: /bin/zsh
+#  args:
+#    - -l
+#    - -c
+#    - "tmux"
+
+font:
+  size: 13
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+  bold:
+    family: Hack Nerd Font
+    style: Bold
+  italic:
+    family: Hack Nerd Font
+    style: Italic
+  bold_italic:
+    family: Hack Nerd Font
+    style: Bold Italic
+draw_bold_text_with_bright_colors: true
+
+scrolling:
+  history: 5000
+  multiplier: 2
+
+# schemes:
+#   tokyo-night: &tokyo-night
+#     primary:
+#       background: '0x2E3440'
+#       foreground: '0xa9b1d6'
+#     normal:
+#       black:   '0x32344a'
+#       red:     '0xf7768e'
+#       green:   '0x9ece6a'
+#       yellow:  '0xe0af68'
+#       blue:    '0x7aa2f7'
+#       magenta: '0xad8ee6'
+#       cyan:    '0x449dab'
+#       white:   '0x787c99'
+#     bright:
+#       black:   '0x444b6a'
+#       red:     '0xff7a93'
+#       green:   '0xb9f27c'
+#       yellow:  '0xff9e64'
+#       blue:    '0x7da6ff'
+#       magenta: '0xbb9af7'
+#       cyan:    '0x0db9d7'
+#       white:   '0xacb0d0'
+#
+# colors: *tokyo-night
+
+colors:
+  primary:
+    background: '#2e3440'
+    foreground: '#d8dee9'
+    dim_foreground: '#a5abb6'
+  cursor:
+    text: '#2e3440'
+    cursor: '#d8dee9'
+  vi_mode_cursor:
+    text: '#2e3440'
+    cursor: '#d8dee9'
+  selection:
+    text: CellForeground
+    background: '#4c566a'
+  search:
+    matches:
+      foreground: CellBackground
+      background: '#88c0d0'
+    bar.footer_bar:
+      background: '#434c5e'
+      foreground: '#d8dee9'
+  normal:
+    black: '#3b4252'
+    red: '#bf616a'
+    green: '#a3be8c'
+    yellow: '#ebcb8b'
+    blue: '#81a1c1'
+    magenta: '#b48ead'
+    cyan: '#88c0d0'
+    white: '#e5e9f0'
+  bright:
+    black: '#4c566a'
+    red: '#bf616a'
+    green: '#a3be8c'
+    yellow: '#ebcb8b'
+    blue: '#81a1c1'
+    magenta: '#b48ead'
+    cyan: '#8fbcbb'
+    white: '#eceff4'
+  dim:
+    black: '#373e4d'
+    red: '#94545d'
+    green: '#809575'
+    yellow: '#b29e75'
+    blue: '#68809a'
+    magenta: '#8c738c'
+    cyan: '#6d96a5'
+    white: '#aeb3bb'
+
+selection:
+  # This string contains all characters that are used as separators for
+  # "semantic words" in Alacritty.
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  # When set to `true`, selected text will be copied to the primary clipboard.
+  save_to_clipboard: true
+
+key_bindings:
+  - { key: N, mods: Command, action: CreateNewWindow }
+  - { key: Back, mods: Command, chars: "\x15" }
+  # - { key: U, mods: Command | Control, chars: "ranger\x0a" }
+
+use_thin_strokes: true
+
+env:
+  TERM: xterm-256color
